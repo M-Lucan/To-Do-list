@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+body, html {
+  background-color: #001524;
+  width: 100%;
+  height: 100%;
+}
+
+.headerEdit{
+  height: 100px;
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 30pt;
+  background-color: #001524;
+}
+
+.taskEdit{
+  width: 500px;
+  font-size: 16pt;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.buttonRemove{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: center;
+  justify-items: flex-end;
+  background-color: #78290F;
+  width: 150px;
+  height: 75px;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  font-size: 12pt;
+}
+
+.buttonRemove:hover{
+  background-color: #5b1f0b;
+  transition-duration: 0.1;
+  transition-timing-function: linear;
+}
+
+
+.FlexContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #001524;
+  gap: 5px;
+}
+
+.FlexContainer > div {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 40%;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 170px;
+    border-bottom: 2px solid rgb(108, 107, 107);
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.addNewTask{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.addNewTaskInput{
+  font-family: "Poppins", sans-serif;
+  font-size: 11pt;
+  width: 282px;
+  height: 35px;
+  border-radius: 3px;
+  border: 2px white;
+  text-align: left;
+  padding-left: 18px;
+}
+
+.addNewTaskButton{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 11pt;
+  font-family: "Poppins", sans-serif;
+  background-color: #FF7D00;
+  color: white;
+  border: 2px #FF7D00;
+  width: 300px;
+  height: 35px;
+  border-radius: 3px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.addNewTaskButton:hover{
+  background-color: #dd6e03;
+  transition-duration: 0.1;
+  transition-timing-function: linear;
+}
+
+.ItemRemoved{
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  left: 0px; 
+  z-index: 1000; 
+  margin-top: 70px;
+  width: 170px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18pt;
+  background-color: green;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.ItemAdded{
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  left: 0px; 
+  z-index: 1000; 
+  margin-top: 70px;
+  width: 170px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18pt;
+  background-color: green;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+/*Display for smaller devices*/
+
+@media (max-width: 845px){
+
+  .taskEdit{
+    font-size: 10pt;
+  }
+
+  .FlexContainer > div {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 70%;
+    gap: 100px;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom: 20px;
+}
+
+.addNewTaskButton{
+  font-size: 11pt;
+  width: 290px;
+}
+
+.addNewTaskInput{
+  width: 270px;
+}
+
+.ItemRemoved{
+  margin-top: 80px;
+}
+
+.buttonRemove{
+height: 50px;
+width: 220px;
+}
+
+}
+  
