@@ -1,8 +1,8 @@
 This is README file for my project.
 ![Design preview for the ToDo project](./ToDo_preview.png)
 
-To-Do List Web Application
-Welcome to our To-Do List Web Application repository! This project aims to provide users with a simple and intuitive platform for managing their tasks efficiently.
+To-Do List Web Application:
+This project aims to provide users with a simple and intuitive platform for managing their tasks efficiently.
 
 Features:
 Task Management: Add, edit, and remove tasks easily.
